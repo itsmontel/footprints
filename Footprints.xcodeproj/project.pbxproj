@@ -1,0 +1,553 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		001 /* FootprintsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100 /* FootprintsApp.swift */; };
+		002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101 /* ContentView.swift */; };
+		003 /* ColorScheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102 /* ColorScheme.swift */; };
+		004 /* PersistenceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103 /* PersistenceController.swift */; };
+		005 /* Walk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104 /* Walk.swift */; };
+		005A /* Walk+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105 /* Walk+Extensions.swift */; };
+		006 /* PhotoLocation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106 /* PhotoLocation.swift */; };
+		007 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107 /* LocationManager.swift */; };
+		008 /* WalkingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108 /* WalkingViewModel.swift */; };
+		009 /* WalkDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109 /* WalkDetailViewModel.swift */; };
+		010 /* PhotoMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110 /* PhotoMapViewModel.swift */; };
+		011 /* CalendarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111 /* CalendarViewModel.swift */; };
+		012 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112 /* HomeView.swift */; };
+		013 /* WeeklyStatsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 113 /* WeeklyStatsCard.swift */; };
+		014 /* MiniCalendarWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114 /* MiniCalendarWidget.swift */; };
+		015 /* ActiveTrackingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115 /* ActiveTrackingView.swift */; };
+		016 /* WalkDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 116 /* WalkDetailView.swift */; };
+		017 /* MapRouteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 117 /* MapRouteView.swift */; };
+		018 /* PhotoGridView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 118 /* PhotoGridView.swift */; };
+		019 /* JournalNoteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 119 /* JournalNoteView.swift */; };
+		020 /* WalkHistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 120 /* WalkHistoryView.swift */; };
+		021 /* WalkRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 121 /* WalkRowView.swift */; };
+		022 /* CalendarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 122 /* CalendarView.swift */; };
+		023 /* PhotoMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 123 /* PhotoMapView.swift */; };
+		024 /* PhotoPinView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124 /* PhotoPinView.swift */; };
+		025 /* PhotoMapFilterBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125 /* PhotoMapFilterBar.swift */; };
+		026 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126 /* SettingsView.swift */; };
+		027 /* PhotoLocationExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127 /* PhotoLocationExtractor.swift */; };
+		028 /* Footprints.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 129 /* Footprints.xcdatamodeld */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		100 /* FootprintsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootprintsApp.swift; sourceTree = "<group>"; };
+		101 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		102 /* ColorScheme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorScheme.swift; sourceTree = "<group>"; };
+		103 /* PersistenceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceController.swift; sourceTree = "<group>"; };
+		104 /* Walk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Walk.swift; sourceTree = "<group>"; };
+		105 /* Walk+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Walk+Extensions.swift"; sourceTree = "<group>"; };
+		106 /* PhotoLocation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLocation.swift; sourceTree = "<group>"; };
+		107 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		108 /* WalkingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkingViewModel.swift; sourceTree = "<group>"; };
+		109 /* WalkDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDetailViewModel.swift; sourceTree = "<group>"; };
+		110 /* PhotoMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapViewModel.swift; sourceTree = "<group>"; };
+		111 /* CalendarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewModel.swift; sourceTree = "<group>"; };
+		112 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		113 /* WeeklyStatsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyStatsCard.swift; sourceTree = "<group>"; };
+		114 /* MiniCalendarWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiniCalendarWidget.swift; sourceTree = "<group>"; };
+		115 /* ActiveTrackingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActiveTrackingView.swift; sourceTree = "<group>"; };
+		116 /* WalkDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkDetailView.swift; sourceTree = "<group>"; };
+		117 /* MapRouteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapRouteView.swift; sourceTree = "<group>"; };
+		118 /* PhotoGridView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoGridView.swift; sourceTree = "<group>"; };
+		119 /* JournalNoteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JournalNoteView.swift; sourceTree = "<group>"; };
+		120 /* WalkHistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkHistoryView.swift; sourceTree = "<group>"; };
+		121 /* WalkRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkRowView.swift; sourceTree = "<group>"; };
+		122 /* CalendarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarView.swift; sourceTree = "<group>"; };
+		123 /* PhotoMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapView.swift; sourceTree = "<group>"; };
+		124 /* PhotoPinView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPinView.swift; sourceTree = "<group>"; };
+		125 /* PhotoMapFilterBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoMapFilterBar.swift; sourceTree = "<group>"; };
+		126 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		127 /* PhotoLocationExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLocationExtractor.swift; sourceTree = "<group>"; };
+		128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		200 /* Footprints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Footprints.app; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		300 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		201 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				200 /* Footprints.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		400 = {
+			isa = PBXGroup;
+			children = (
+				500 /* Footprints */,
+				201 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		500 /* Footprints */ = {
+			isa = PBXGroup;
+			children = (
+				501 /* App */,
+				502 /* Models */,
+				503 /* ViewModels */,
+				504 /* Views */,
+				505 /* Utilities */,
+				506 /* Persistence */,
+				128 /* Info.plist */,
+			);
+			path = Footprints;
+			sourceTree = "<group>";
+		};
+		501 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				100 /* FootprintsApp.swift */,
+				101 /* ContentView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		502 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				104 /* Walk.swift */,
+				105 /* Walk+Extensions.swift */,
+				106 /* PhotoLocation.swift */,
+				107 /* LocationManager.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		503 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				108 /* WalkingViewModel.swift */,
+				109 /* WalkDetailViewModel.swift */,
+				110 /* PhotoMapViewModel.swift */,
+				111 /* CalendarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		504 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				510 /* Home */,
+				511 /* Tracking */,
+				512 /* Detail */,
+				513 /* History */,
+				514 /* PhotoMap */,
+				515 /* Settings */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		505 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				102 /* ColorScheme.swift */,
+				127 /* PhotoLocationExtractor.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		506 /* Persistence */ = {
+			isa = PBXGroup;
+			children = (
+				103 /* PersistenceController.swift */,
+				129 /* Footprints.xcdatamodeld */,
+			);
+			path = Persistence;
+			sourceTree = "<group>";
+		};
+		510 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				112 /* HomeView.swift */,
+				113 /* WeeklyStatsCard.swift */,
+				114 /* MiniCalendarWidget.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		511 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				115 /* ActiveTrackingView.swift */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
+		512 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				116 /* WalkDetailView.swift */,
+				117 /* MapRouteView.swift */,
+				118 /* PhotoGridView.swift */,
+				119 /* JournalNoteView.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		513 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				120 /* WalkHistoryView.swift */,
+				121 /* WalkRowView.swift */,
+				122 /* CalendarView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		514 /* PhotoMap */ = {
+			isa = PBXGroup;
+			children = (
+				123 /* PhotoMapView.swift */,
+				124 /* PhotoPinView.swift */,
+				125 /* PhotoMapFilterBar.swift */,
+			);
+			path = PhotoMap;
+			sourceTree = "<group>";
+		};
+		515 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				126 /* SettingsView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		600 /* Footprints */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 700 /* Build configuration list for PBXNativeTarget "Footprints" */;
+			buildPhases = (
+				601 /* Sources */,
+				300 /* Frameworks */,
+				602 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Footprints;
+			productName = Footprints;
+			productReference = 200 /* Footprints.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		800 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					600 = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = 801 /* Build configuration list for PBXProject "Footprints" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 400;
+			productRefGroup = 201 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				600 /* Footprints */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		602 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		601 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				001 /* FootprintsApp.swift in Sources */,
+				002 /* ContentView.swift in Sources */,
+				003 /* ColorScheme.swift in Sources */,
+				004 /* PersistenceController.swift in Sources */,
+				005 /* Walk.swift in Sources */,
+				005A /* Walk+Extensions.swift in Sources */,
+				006 /* PhotoLocation.swift in Sources */,
+				007 /* LocationManager.swift in Sources */,
+				008 /* WalkingViewModel.swift in Sources */,
+				009 /* WalkDetailViewModel.swift in Sources */,
+				010 /* PhotoMapViewModel.swift in Sources */,
+				011 /* CalendarViewModel.swift in Sources */,
+				012 /* HomeView.swift in Sources */,
+				013 /* WeeklyStatsCard.swift in Sources */,
+				014 /* MiniCalendarWidget.swift in Sources */,
+				015 /* ActiveTrackingView.swift in Sources */,
+				016 /* WalkDetailView.swift in Sources */,
+				017 /* MapRouteView.swift in Sources */,
+				018 /* PhotoGridView.swift in Sources */,
+				019 /* JournalNoteView.swift in Sources */,
+				020 /* WalkHistoryView.swift in Sources */,
+				021 /* WalkRowView.swift in Sources */,
+				022 /* CalendarView.swift in Sources */,
+				023 /* PhotoMapView.swift in Sources */,
+				024 /* PhotoPinView.swift in Sources */,
+				025 /* PhotoMapFilterBar.swift in Sources */,
+				026 /* SettingsView.swift in Sources */,
+				027 /* PhotoLocationExtractor.swift in Sources */,
+				028 /* Footprints.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		900 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		901 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 3KCUWMGF4F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Footprints/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Footprints;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.footprints.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		903 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 3KCUWMGF4F;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Footprints/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = Footprints;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.healthcare-fitness";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.footprints.app;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		700 /* Build configuration list for PBXNativeTarget "Footprints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				902 /* Debug */,
+				903 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		801 /* Build configuration list for PBXProject "Footprints" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				900 /* Debug */,
+				901 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		129 /* Footprints.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+			);
+			path = Footprints.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 800 /* Project object */;
+}
