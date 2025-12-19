@@ -68,6 +68,7 @@
 		126 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		127 /* PhotoLocationExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLocationExtractor.swift; sourceTree = "<group>"; };
 		128 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		130 /* Footprints.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Footprints.xcdatamodel; sourceTree = "<group>"; };
 		200 /* Footprints.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Footprints.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -542,7 +543,9 @@
 		129 /* Footprints.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				130 /* Footprints.xcdatamodel */,
 			);
+			currentVersion = 130 /* Footprints.xcdatamodel */;
 			path = Footprints.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

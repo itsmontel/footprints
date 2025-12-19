@@ -74,7 +74,21 @@ struct WalkRowView: View {
             Spacer()
             
             VStack(alignment: .trailing, spacing: 8) {
-                buildIndicators()
+                Group {
+                    if walk.hasPhotos && walk.hasJournal {
+                        HStack(spacing: 6) {
+                            photoBadge
+                            journalIcon
+                        }
+                    } else if walk.hasPhotos {
+                        photoBadge
+                    } else if walk.hasJournal {
+                        journalIcon
+                    } else {
+                        Color.clear
+                    }
+                }
+                .frame(height: 20)
                 
                 Spacer()
                 
@@ -89,24 +103,6 @@ struct WalkRowView: View {
                 .fill(.white)
                 .shadow(color: AppColors.shadowGreen, radius: 10, x: 0, y: 5)
         )
-    }
-    
-    private func buildIndicators() -> some View {
-        if walk.hasPhotos && walk.hasJournal {
-            return AnyView(
-                HStack(spacing: 6) {
-                    photoBadge
-                    journalIcon
-                }
-                .frame(height: 20)
-            )
-        } else if walk.hasPhotos {
-            return AnyView(photoBadge.frame(height: 20))
-        } else if walk.hasJournal {
-            return AnyView(journalIcon.frame(height: 20))
-        } else {
-            return AnyView(Color.clear.frame(height: 20))
-        }
     }
     
     private var photoBadge: some View {
@@ -144,7 +140,7 @@ struct WalkRowView: View {
     walk.duration = 1845
     walk.journalNote = "A lovely morning walk through the park"
     
-    WalkRowView(walk: walk)
+    return WalkRowView(walk: walk)
         .padding()
         .background(AppColors.meshGradient)
 }

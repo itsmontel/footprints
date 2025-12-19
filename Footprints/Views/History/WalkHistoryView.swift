@@ -64,8 +64,20 @@ struct WalkHistoryView: View {
             }
             .navigationTitle("History")
             .navigationBarTitleDisplayMode(.large)
-            .navigationDestination(item: $selectedWalk) { walk in
-                WalkDetailView(walk: walk)
+            .sheet(isPresented: $showWalkDetail) {
+                if let walk = selectedWalk {
+                    NavigationView {
+                        WalkDetailView(walk: walk)
+                            .navigationBarTitleDisplayMode(.inline)
+                            .toolbar {
+                                ToolbarItem(placement: .navigationBarTrailing) {
+                                    Button("Done") {
+                                        showWalkDetail = false
+                                    }
+                                }
+                            }
+                    }
+                }
             }
             .alert("Delete Walk?", isPresented: $showDeleteConfirmation) {
                 Button("Cancel", role: .cancel) {
